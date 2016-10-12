@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articleOne ={
     title: 'Article one By RRP',
-    heading: ' Article One By RRP ',
+    heading: ' Article One By RRP',
     date: 'Sept 25th 2016',
     content: ` <p>
                     This Is The Content of My first Article Made a begginer programmer ravi roshan pandey.. Pls wish me Luck So i can use up my skills and be the best programmer in the world.
