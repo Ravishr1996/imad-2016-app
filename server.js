@@ -43,13 +43,13 @@ var articles = {
     title: 'Article THREE By RRP',
     heading: ' Article THREE By RRP',
     date: 'Sept 9th 2016',
-    content: <p>
+    content: `<p>
                This Is The Content of My third  Article Made a begginer programmer ravi roshan pandey.. Pls wish me Luck So i can use up my skills and be the best programmer in the world.
-           </p>
+             </p>
            
            <p>
              Hey You Guyz
-           </p>
+           </p>`
        
     }
    };
