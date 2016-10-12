@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles = 
+var articles = {  
     articleOne ={
     title: 'Article one By RRP',
     heading: ' Article One By RRP',
@@ -25,7 +25,34 @@ var articles =
     
     
     
-    };
+    },
+    articleTwo ={
+    title: 'Article two By RRP',
+    heading: ' Article two By RRP',
+    date: 'Sept 6th 2016',
+    content: ` <p>
+               This Is The Content of My second Article Made a begginer programmer ravi roshan pandey.. Pls wish me Luck So i can use up my skills and be the best programmer in the world.
+           </p>
+           
+          <p>
+            This is My 2nd article 
+          </p>`
+        
+    },
+    articleThree={
+    title: 'Article THREE By RRP',
+    heading: ' Article THREE By RRP',
+    date: 'Sept 9th 2016',
+    content: <p>
+               This Is The Content of My third  Article Made a begginer programmer ravi roshan pandey.. Pls wish me Luck So i can use up my skills and be the best programmer in the world.
+           </p>
+           
+           <p>
+             Hey You Guyz
+           </p>
+       
+    }
+   };
 
 function createTemplate (data)  {
     var title = data.title;
