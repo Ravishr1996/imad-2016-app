@@ -18,5 +18,14 @@ body {
 
 .img-medium {
     height: 220px;
+    
 }
+ 
+ 
+.container {
+               max-width:800px;
+               margin:0 auto;
+               color: grey;
+               font-family: sans-serif;
+           }
 
