@@ -26,7 +26,7 @@ var articles = {
     
     
     },
-    article-two : {
+    articleTwo : {
     title: 'Article two By RRP',
     heading: ' Article two By RRP',
     date: 'Sept 6th 2016',
@@ -39,7 +39,7 @@ var articles = {
           </p>`
         
     },
-    article-three : {
+    articleThree : {
     title: 'Article THREE By RRP',
     heading: ' Article THREE By RRP',
     date: 'Sept 9th 2016',
