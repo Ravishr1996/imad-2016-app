@@ -58,13 +58,13 @@ function createTemplate (data){
             <div>
                ${content}
             </div>
-        </div>
-                    <div>
-                        <script>
-                            alert (" This is the javascript of the Article one ");
-                            alert ( " This is the 2nd line of the java script of the article one ");
-                        </script>
-                    </div>
+            </div>
+            <div>
+             <script>
+              alert (" This is the javascript of the Article one ");
+              alert ( " This is the 2nd line of the java script of the article one ");
+              </script>
+            </div>
    </body>
  </html>
  `; 
