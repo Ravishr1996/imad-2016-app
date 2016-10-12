@@ -33,7 +33,7 @@ function createTemplate (data){
     var date = data.date;
     var content = data.content; 
     
-    var maintemplate = `<html>
+    var htmlTemplate = `<html>
     <head>
        <title>
            ${tilte}
@@ -68,7 +68,7 @@ function createTemplate (data){
    </body>
  </html>
  `; 
- return maintemplate;
+ return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.send(createTemplate(ArticleOne));
