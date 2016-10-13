@@ -3,7 +3,7 @@ var element = document.getElementById('main-text');
 element.innerHTML = ' ravi roshan pandey';
 
 var img = document.getElementById('madi');
-var marginLeft = 0;
+var marginRight = 0;
 
 
 
