@@ -18,11 +18,11 @@ app.get('/counter', function (req, res) {
 
 });
 
-var name=[];
+var names=[];
 app.get('/submit-name',function (req,res){
     var name=req.queryname;
     names.push(name);
-    res.send(JSON.stringify(name));
+    res.send(JSON.stringify(names));
     
 });
 
