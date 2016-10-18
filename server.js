@@ -18,10 +18,20 @@ app.get('/counter', function (req, res) {
 
 });
 
+var name=[];
+app.get('submit-name',function (req,res){
+    var name=req.queryname;
+    names.push(name);
+    res.send(JSON.stringify(names));
+    
+});
+
+
  
 app.get('/article-one', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+
 
 app.get('/article-two', function (req,res){
     res.send(createTemplate(articleTwo));
