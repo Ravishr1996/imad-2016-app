@@ -22,7 +22,7 @@ var name=[];
 app.get('/submit-name',function (req,res){
     var name=req.queryname;
     names.push(name);
-    res.send(JSON.stringify(names));
+    res.send(JSON.stringify(name));
     
 });
 
