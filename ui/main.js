@@ -19,38 +19,7 @@ button.onclick = function() {
     request.send(null);
 };
 
-//submit name
-var nameeInput=document.getElementById('namee');
-var namee = nameInput.value;
-var submmit=document.getElementById('submit_btnn');
-submmit.onclick=function() {
-   var request = new XMLHttpRequest();
-   
-   request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE){
-             if (request.status === 200){
-                  var nammes= request.responseText;
-                  nammes = JSON.parse(nammes);
-                  var list=''; 
-                  for(var i=0; i<nammes.length; i++){
-                      list += '<li>' + nammes[i] + '</li>';
-                      
-                  }
-                    var ul = document.getElementById('nameelist');
-                    ul.innerHTML = list; 
-                               
-             }
-        } 
-    };
-    var nameInput=document.getElementById('name');
-    var name = nameInput.value; 
-    request.open('GET','http://ravishr1996.imad.hasura-app.io/article-name?name= '+name, true);
-    request.send(null);
-    
-   //capture a list of names and render it as a list
-  
- 
-};
+
 
 //submit name
 var nameInput=document.getElementById('name');
