@@ -20,23 +20,23 @@ button.onclick = function() {
 };
 
 //submit name
-var nameInput=document.getElementById('name');
-var name = nameInput.value;
-var submit=document.getElementById('submit_btn');
-submit.onclick=function() {
+var nameeInput=document.getElementById('namee');
+var namee = nameInput.value;
+var submmit=document.getElementById('submit_btnn');
+submmit.onclick=function() {
    var request = new XMLHttpRequest();
    
    request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE){
              if (request.status === 200){
-                  var names= request.responseText;
-                  names = JSON.parse(names);
+                  var nammes= request.responseText;
+                  nammes = JSON.parse(nammes);
                   var list=''; 
-                  for(var i=0; i<names.length; i++){
-                      list += '<li>' + names[i] + '</li>';
+                  for(var i=0; i<nammes.length; i++){
+                      list += '<li>' + nammes[i] + '</li>';
                       
                   }
-                    var ul = document.getElementById('namelist');
+                    var ul = document.getElementById('nameelist');
                     ul.innerHTML = list; 
                                
              }
