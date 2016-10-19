@@ -24,11 +24,6 @@ var nameInput=document.getElementById('name');
 var name = nameInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick=function() {
-    
-   
-
- 
-   
    var request = new XMLHttpRequest();
    
    request.onreadystatechange = function () {
@@ -47,7 +42,8 @@ submit.onclick=function() {
              }
         } 
     };
-
+    var nameInput=document.getElementById('name');
+    var name = nameInput.value; 
     request.open('GET','http://ravishr1996.imad.hasura-app.io/submit-name?name= ' + name, true);
     request.send(null);
     
