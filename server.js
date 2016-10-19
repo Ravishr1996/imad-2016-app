@@ -26,6 +26,10 @@ app.get('/submit-name',function (req,res) {
     
 });
 
+app.get('/article-one', function (req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
+
 var names=[];
 app.get('/article-name',function (req,res) {
     var name= req.query.name;
@@ -37,9 +41,7 @@ app.get('/article-name',function (req,res) {
 
 
  
-app.get('/article-one', function (req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
+
 
 
 app.get('/article-two', function (req,res){
