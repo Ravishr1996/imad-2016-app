@@ -28,13 +28,7 @@ app.get('/submit-name',function (req,res) {
 
 
 
-var names=[];
-app.get('/article-name',function (req,res) {
-    var name= req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-    
-});
+
 
 app.get('/article-one', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
