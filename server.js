@@ -1,21 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Ravishr1996
- Watch 0
-  Star 0
-  Fork 3,988 Ravishr1996/imad-2016-app
-forked from hasura-imad/imad-2016-app
- Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Tree: 0516535e4b Find file Copy pathimad-2016-app/server.js
-0516535  5 days ago
-@Ravishr1996 Ravishr1996 [imad-console] Updates server.js
-2 contributors @Ravishr1996 @coco98
-RawBlameHistory     
-70 lines (44 sloc)  1.43 KB
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
