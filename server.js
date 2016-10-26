@@ -27,6 +27,9 @@ app.get('/submit-name',function (req,res) {
     
 });
 
+app.get('/test', function (req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'testt.html'));
+});
 
 
 
