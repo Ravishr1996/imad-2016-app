@@ -3,29 +3,25 @@
 <head>
 <style>
 div {
-    width: 300px;
+    width: 100px;
     height: 100px;
-    background-color: yellow;
-    border: 1px solid black;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
 }
 
-div#myDiv {
-    -webkit-transform: rotateX(150deg); /* Safari */
-    transform: rotateX(150deg); /* Standard syntax */
+div:hover {
+    width: 300px;
 }
 </style>
 </head>
 <body>
 
-<div>
-This a normal div element.
-</div>
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
 
-<div id="myDiv">
-The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
-</div>
+<div></div>
 
-<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
+<p>Hover over the div element above, to see the transition effect.</p>
 
 </body>
 </html>
