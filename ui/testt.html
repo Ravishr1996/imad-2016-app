@@ -1,62 +1,32 @@
-<!doctype html>
-<html!>
-<head>
-    <link href="/ui/style.css" rel="stylesheet" />
-<head/>   
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-table, th, td {
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
     border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
 }
 </style>
 </head>
 <body>
 
-<h2>Add a border to a table:</h2>
+<div>
+This a normal div element.
+</div>
 
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>Peter</td>
-    <td>Griffin</td>
-  </tr>
-  <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-  </tr>
-</table>
+<div id="myDiv">
+The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+
+<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
 
 </body>
-</html>
-
-
-    <body>
-    <link href="/ui/style.css" rel="stylesheet" />
-        <p class="dotted">A dotted border.</p>
-        <p class="dashed">A dashed border.</p>
-        <p class="solid">A solid border.</p>
-        <p class="double">A double border.</p>
-        <p class="groove">A groove border.</p>
-        <p class="ridge">A ridge border.</p>
-        <p class="inset">An inset border.</p>
-        <p class="outset">An outset border.</p>
-        <p class="none">No border.</p>
-        <p class="hidden">A hidden border.</p>
-        <p class="mix">A mixed border.</p>
-     <div class ="footer">
-                            
-                           
-
-
-<h1>Hello World!</h1>
-<p>W3Schools background image example.</p>
-<p>The background image is only showing once, but it is disturbing the reader!</p>
-
-    </body>
 </html>
 
