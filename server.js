@@ -27,6 +27,14 @@ app.get('/submit-name',function (req,res) {
     
 });
 
+var comments=[];
+app.get('/submit-comments',function (req,res) {
+    var name= req.query.comment;
+     comments.push(comment);
+    res.send(JSON.stringify(comments));
+    
+});
+
 app.get('/testt', function (req,res){
     res.sendFile(path.join(__dirname, 'ui', 'testt.html'));
 });
