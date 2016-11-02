@@ -46,7 +46,7 @@ submitt.onclick=function() {
     };
     var commentInput=document.getElementById('comment');
     var comment =commentInput.value; 
-    request.open('GET','http://ravishr1996.imad.hasura-app.io/submitt-comment?comment= '+comment, true);
+    request.open('GET','http://ravishr1996.imad.hasura-app.io/submitt-comment?comment='+comment, true);
     request.send(null);
     
    //capture a list of names and render it as a list
