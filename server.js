@@ -28,7 +28,7 @@ app.get('/submit-name',function (req,res) {
 });
 
 var comments=[];
-app.get('/submit-comments',function (req,res) {
+app.get('/submit-comment',function (req,res) {
     var name= req.query.comment;
      comments.push(comment);
     res.send(JSON.stringify(comments));
