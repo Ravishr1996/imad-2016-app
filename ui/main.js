@@ -24,7 +24,7 @@ button.onclick = function() {
 //submit name
 var commentInput=document.getElementById('comment');
 var comment = commentInput.value;
-var submitt=document.getElementById('submit_butn');
+var submitt=document.getElementById('submitt_butn');
 submitt.onclick=function() {
    var request = new XMLHttpRequest();
    
