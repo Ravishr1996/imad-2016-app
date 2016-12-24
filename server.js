@@ -1,3 +1,4 @@
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -23,14 +24,6 @@ app.get('/submit-name',function (req,res) {
     var name= req.query.name;
     names.push(name);
     res.send(JSON.stringify(names));
-    
-});
-
-var comments=[];
-app.get('/submit-comment',function (req,res) {
-    var comment= req.query.comment;
-     comments.push(comment);
-    res.send(JSON.stringify(comments));
     
 });
 
